@@ -14,6 +14,9 @@ public class Person {
         this.age = age;
     }
 
+    public Person() {
+    }
+
     public int getHeight() {
         return height;
     }
@@ -46,7 +49,7 @@ public class Person {
         this.age = age;
     }
 
-    public void walk() {
+    /*public void walk() {
         if (this.age > 1 && this.age < 90) {
             System.out.println("I walking");
         } else {
@@ -65,9 +68,41 @@ public class Person {
     public void run() {
         if (this.age > 2 && this.age < 60) {
             System.out.println("Let's run fastly!");
-        }
-        else {
+        } else {
             System.out.println("Sorry, running is too hard for me :(");
         }
+    }*/
+
+    public void walk(boolean canWalk) {
+        if (canWalk) {
+            System.out.println("Person is walking");
+        } else {
+            System.out.println("Person is probably ill or toddler");
+        }
     }
+
+    public void talk(boolean canTalk) {
+        if (canTalk) {
+            System.out.println("Person is walking");
+        } else {
+            System.out.println("Person is probably ill or toddler");
+        }
+    }
+
+    public void eat(boolean canEat) {
+        if (canEat) {
+            System.out.println("Person is walking");
+        } else {
+            System.out.println("Person is probably ill or toddler");
+        }
+    }
+
+    public void run(boolean canRun) {
+        if (canRun) {
+            System.out.println("Person is walking");
+        } else {
+            System.out.println("Person is probably ill or toddler");
+        }
+    }
+
 }
